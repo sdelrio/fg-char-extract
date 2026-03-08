@@ -22,6 +22,18 @@ jobs:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
+      - name: Release Please Summary
+        run: |
+          echo "### 🔖 Release Please Status" >> $GITHUB_STEP_SUMMARY
+          if [[ "${{ steps.release.outputs.release_created }}" == "true" ]]; then
+            echo "✅ **Release Created!**" >> $GITHUB_STEP_SUMMARY
+            echo "**Tag:** \`${{ steps.release.outputs.tag_name }}\`" >> $GITHUB_STEP_SUMMARY
+            echo "- [View Release](https://github.com/${{ github.repository }}/releases/tag/${{ steps.release.outputs.tag_name }})" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ **No release created.**" >> $GITHUB_STEP_SUMMARY
+            echo "Release Please is monitoring the branch for conventional commits to prepare the next release." >> $GITHUB_STEP_SUMMARY
+          fi
+
   upload-artifacts:
     runs-on: ubuntu-latest
     needs: release-please
