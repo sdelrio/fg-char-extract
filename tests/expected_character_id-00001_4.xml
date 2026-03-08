@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="3.1" release="7|CoreRPG:3">
+	<character>
+
+			
+			
+			<abilities>
+				
+				
+				<charisma>
+					
+					
+					<bonus type="number">0</bonus>
+					<save type="number">0</save>
+					<savemodifier type="number">0</savemodifier>
+					<saveprof type="number">0</saveprof>
+					<score type="number">10</score>
+				</charisma>
+				<constitution>
+					
+					
+					<bonus type="number">2</bonus>
+					<save type="number">4</save>
+					<savemodifier type="number">0</savemodifier>
+					<saveprof type="number">1</saveprof>
+					<score type="number">15</score>
+				</constitution>
+				<dexterity>
+					
+					
+					<bonus type="number">2</bonus>
+					<save type="number">2</save>
+					<savemodifier type="number">0</savemodifier>
+					<saveprof type="number">0</saveprof>
+					<score type="number">15</score>
+				</dexterity>
+				<intelligence>
+					
+					
+					<bonus type="number">0</bonus>
+					<save type="number">0</save>
+					<savemodifier type="number">0</savemodifier>
+					<saveprof type="number">0</saveprof>
+					<score type="number">10</score>
+				</intelligence>
+				<strength>
+					
+					
+					<bonus type="number">3</bonus>
+					<save type="number">5</save>
+					<savemodifier type="number">0</savemodifier>
+					<saveprof type="number">1</saveprof>
+					<score type="number">16</score>
+				</strength>
+				<wisdom>
+					
+					
+					<bonus type="number">0</bonus>
+					<save type="number">0</save>
+					<savemodifier type="number">0</savemodifier>
+					<saveprof type="number">0</saveprof>
+					<score type="number">10</score>
+				</wisdom>
+			</abilities>
+			<background type="string">Soldier</background>
+			<backgroundlink type="windowreference">
+				<class>reference_background</class>
+				<recordname>background.id-00004@DNDSRD521PLAYER</recordname>
+			</backgroundlink>
+			<backgroundversion type="string">2024</backgroundversion>
+			<classes>
+				
+				
+				<id-00001>
+					
+					
+					<hddie type="dice">1d12</hddie>
+					<hdused type="number">0</hdused>
+					<level type="number">4</level>
+					<name type="string">Barbarian</name>
+					<shortcut type="windowreference">
+						<class>reference_class</class>
+						<recordname>class.id-00001@DNDSRD521PLAYER</recordname>
+					</shortcut>
+					<specialization type="string">Path of the Berserker</specialization>
+					<specializationlink type="windowreference">
+						<class>reference_class_specialization</class>
+						<recordname>class_specialization.id-00001@DNDSRD521PLAYER</recordname>
+					</specializationlink>
+					<specializationversion type="string">2024</specializationversion>
+					<version type="string">2024</version>
+				</id-00001>
+			</classes>
+			<coins>
+				
+				
+				<id-00001>
+					
+					
+					<amount type="number">0</amount>
+					<name type="string">PP</name>
+				</id-00001>
+				<id-00002>
+					
+					
+					<amount type="number">29</amount>
+					<name type="string">GP</name>
+				</id-00002>
+				<id-00003>
+					
+					
+					<amount type="number">0</amount>
+					<name type="string">EP</name>
+				</id-00003>
+				<id-00004>
+					
+					
+					<amount type="number">0</amount>
+					<name type="string">SP</name>
+				</id-00004>
+				<id-00005>
+					
+					
+					<amount type="number">0</amount>
+					<name type="string">CP</name>
+				</id-00005>
+			</coins>
+			<defenses>
+				
+				
+				<ac>
+					
+					
+					<armor type="number">0</armor>
+					<disstealth type="number">0</disstealth>
+					<misc type="number">0</misc>
+					<prof type="number">1</prof>
+					<shield type="number">0</shield>
+					<stat2 type="string">constitution</stat2>
+					<temporary type="number">0</temporary>
+					<total type="number">14</total>
+				</ac>
+			</defenses>
+			<encumbrance>
+				
+				
+				<encumbered type="number">80</encumbered>
+				<encumberedheavy type="number">160</encumberedheavy>
+				<liftpushdrag type="number">480</liftpushdrag>
+				<load type="number">84</load>
+				<max type="number">240</max>
+			</encumbrance>
+			<exp type="number">0</exp>
+			<expneeded type="number">6500</expneeded>
+			<featlist>
+				
+				
+				<id-00001>
+					
+					
+					<category type="string">Origin</category>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Savage Attacker</name>
+					<repeatable type="number">0</repeatable>
+					<text type="formattedtext">
+						<p>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</p>
+					</text>
+					<version type="string">2024</version>
+				</id-00001>
+				<id-00002>
+					
+					
+					<category type="string">General</category>
+					<level type="number">4</level>
+					<locked type="number">1</locked>
+					<name type="string">Grappler</name>
+					<prerequisite type="string">Strength or Dexterity 13+</prerequisite>
+					<repeatable type="number">0</repeatable>
+					<text type="formattedtext">
+						<p>You gain the following benefits.</p>
+						<p>
+							<b>Ability Score Increase. </b>Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+						<p>
+							<b>Punch and Grab. </b>When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p>
+						<p>
+							<b>Attack Advantage. </b>You have Advantage on attack rolls against a creature Grappled by you.</p>
+						<p>
+							<b>Fast Wrestler. </b>You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</p>
+					</text>
+					<version type="string">2024</version>
+				</id-00002>
+			</featlist>
+			<featurelist>
+				
+				
+				<id-00001>
+					
+					
+					<level type="number">1</level>
+					<locked type="number">1</locked>
+					<name type="string">Rage</name>
+					<text type="formattedtext">
+						<p>You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.</p>
+						<p>You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+						<p>While active, your Rage follows the rules below.</p>
+						<p>
+							<b>Damage Resistance. </b>You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+						<p>
+							<b>Rage Damage. </b>When you make an attack using Strength - with either a weapon or an Unarmed Strike - and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.</p>
+						<p>
+							<b>Strength Advantage. </b>You have Advantage on Strength checks and Strength saving throws.</p>
+						<p>
+							<b>No Concentration or Spells. </b>You can't maintain Concentration, and you can't cast spells.</p>
+						<p>Duration. The Rage lasts until the end of your next turn, and it ends early if you don Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following:</p>
+						<p>• Make an attack roll against an enemy.
+• Force an enemy to make a saving throw.
+• Take a Bonus Action to extend your Rage.</p>
+						<p>Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes.</p>
+					</text>
+				</id-00001>
+				<id-00002>
+					
+					
+					<level type="number">1</level>
+					<locked type="number">1</locked>
+					<name type="string">Unarmored Defense</name>
+					<text type="formattedtext">
+						<p>While you aren't wearing any armor, your base Armor Class equals 10 plus your Dexterity and Constitution modifiers. You can use a Shield and still gain this benefit.</p>
+					</text>
+				</id-00002>
+				<id-00003>
+					
+					
+					<level type="number">1</level>
+					<locked type="number">1</locked>
+					<name type="string">Weapon Mastery</name>
+					<text type="formattedtext">
+						<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+						<p>When you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table.</p>
+					</text>
+				</id-00003>
+				<id-00004>
+					
+					
+					<level type="number">2</level>
+					<locked type="number">1</locked>
+					<name type="string">Danger Sense</name>
+					<text type="formattedtext">
+						<p>You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.</p>
+					</text>
+				</id-00004>
+				<id-00005>
+					
+					
+					<level type="number">2</level>
+					<locked type="number">1</locked>
+					<name type="string">Reckless Attack</name>
+					<text type="formattedtext">
+						<p>You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</p>
+					</text>
+				</id-00005>
+				<id-00006>
+					
+					
+					<level type="number">3</level>
+					<locked type="number">1</locked>
+					<name type="string">Barbarian Subclass</name>
+					<text type="formattedtext">
+						<p>You gain a Barbarian subclass of your choice. The Path of the Berserker subclass is detailed after this class's description. A subclass is a specialization that grants you features at certain Barbarian levels. For the rest of your career, you gain each of your subclass's features that are of your Barbarian level or lower.</p>
+					</text>
+				</id-00006>
+				<id-00007>
+					
+					
+					<level type="number">3</level>
+					<locked type="number">1</locked>
+					<name type="string">Primal Knowledge</name>
+					<text type="formattedtext">
+						<p>You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p>
+						<p>In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.</p>
+					</text>
+				</id-00007>
+				<id-00008>
+					
+					
+					<level type="number">3</level>
+					<locked type="number">1</locked>
+					<name type="string">Frenzy</name>
+					<text type="formattedtext">
+						<p>If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.</p>
+					</text>
+				</id-00008>
+				<id-00009>
+					
+					
+					<level type="number">4</level>
+					<locked type="number">1</locked>
+					<name type="string">Weapon Mastery (L4)</name>
+					<text type="formattedtext">
+						<p>You gain the ability to use the mastery properties of one more kinds of weapons.</p>
+					</text>
+				</id-00009>
+			</featurelist>
+			<hp>
+				
+				
+				<deathsavefail type="number">0</deathsavefail>
+				<deathsavesuccess type="number">0</deathsavesuccess>
+				<temporary type="number">0</temporary>
+				<total type="number">45</total>
+				<wounds type="number">0</wounds>
+			</hp>
+			<initiative>
+				
+				
+				<misc type="number">0</misc>
+				<prof type="number">0</prof>
+				<temporary type="number">0</temporary>
+				<total type="number">2</total>
+			</initiative>
+			<inspiration type="number">0</inspiration>
+			<inventorylist>
+				
+				
+				<id-00001>
+					
+					
+					<bonus type="number">0</bonus>
+					<carried type="number">2</carried>
+					<cost type="string">30 GP</cost>
+					<count type="number">1</count>
+					<damage type="string">1d12 Slashing</damage>
+					<description type="formattedtext">
+						<p></p>
+					</description>
+					<locked type="number">1</locked>
+					<mastery type="string">Cleave</mastery>
+					<name type="string">Greataxe</name>
+					<picture type="token"></picture>
+					<properties type="string">Heavy, Two-Handed</properties>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Martial Melee Weapons</subtype>
+					<type type="string">Weapon</type>
+					<version type="string">2024</version>
+					<weight type="number">7</weight>
+				</id-00001>
+				<id-00002>
+					
+					
+					<bonus type="number">0</bonus>
+					<carried type="number">2</carried>
+					<cost type="string">5 GP</cost>
+					<count type="number">4</count>
+					<damage type="string">1d6 Slashing</damage>
+					<description type="formattedtext">
+						<p></p>
+					</description>
+					<locked type="number">1</locked>
+					<mastery type="string">Vex</mastery>
+					<name type="string">Handaxe</name>
+					<picture type="token"></picture>
+					<properties type="string">Light, Thrown (Range 20/60)</properties>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Simple Melee Weapons</subtype>
+					<type type="string">Weapon</type>
+					<version type="string">2024</version>
+					<weight type="number">2</weight>
+				</id-00002>
+				<id-00003>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">2 GP</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Backpack</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">5</weight>
+				</id-00003>
+				<id-00004>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">1 GP</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the Dungeon Master's Guide).</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Bedroll</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">7</weight>
+				</id-00004>
+				<id-00005>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">1 SP</cost>
+					<count type="number">2</count>
+					<description type="formattedtext">
+						<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p>
+						<p>
+							<b>
+								<i>Dousing a Creature or an Object. </i>
+							</b>When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra 5 Fire damage from burning oil.</p>
+						<p>
+							<b>
+								<i>Dousing a Space. </i>
+							</b>You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p>
+						<p>
+							<b>
+								<i>Fuel. </i>
+							</b>Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn't need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Oil (Flask)</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">1</weight>
+				</id-00005>
+				<id-00006>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">5 SP</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch-or anything else with exposed fuel-takes a Bonus Action. Lighting any other fire takes 1 minute.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Tinderbox</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">1</weight>
+				</id-00006>
+				<id-00007>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">5 SP</cost>
+					<count type="number">10</count>
+					<description type="formattedtext">
+						<p>Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See "Malnutrition" in the rules glossary for the risks of not eating.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Rations (1 day)</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">2</weight>
+				</id-00007>
+				<id-00008>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">1 GP</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.</p>
+						<p>You can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Rope</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">5</weight>
+				</id-00008>
+				<id-00009>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">2 SP</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration (see the rules glossary).</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Waterskin</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">5</weight>
+				</id-00009>
+				<id-00010>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">1 CP</cost>
+					<count type="number">10</count>
+					<description type="formattedtext">
+						<p>A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Torch</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">1</weight>
+				</id-00010>
+				<id-00011>
+					
+					
+					<bonus type="number">0</bonus>
+					<carried type="number">2</carried>
+					<cost type="string">1 GP</cost>
+					<count type="number">1</count>
+					<damage type="string">1d6 Piercing</damage>
+					<description type="formattedtext">
+						<p></p>
+					</description>
+					<locked type="number">1</locked>
+					<mastery type="string">Sap</mastery>
+					<name type="string">Spear</name>
+					<picture type="token"></picture>
+					<properties type="string">Thrown (Range 20/60), Versatile (1d8)</properties>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Simple Melee Weapons</subtype>
+					<type type="string">Weapon</type>
+					<version type="string">2024</version>
+					<weight type="number">3</weight>
+				</id-00011>
+				<id-00012>
+					
+					
+					<bonus type="number">0</bonus>
+					<carried type="number">2</carried>
+					<cost type="string">25 GP</cost>
+					<count type="number">1</count>
+					<damage type="string">1d6 Piercing</damage>
+					<description type="formattedtext">
+						<p></p>
+					</description>
+					<locked type="number">1</locked>
+					<mastery type="string">Vex</mastery>
+					<name type="string">Shortbow</name>
+					<picture type="token"></picture>
+					<properties type="string">Ammunition (Range 80/320; Arrow), Two-Handed</properties>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Simple Ranged Weapons</subtype>
+					<type type="string">Weapon</type>
+					<version type="string">2024</version>
+					<weight type="number">2</weight>
+				</id-00012>
+				<id-00013>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">0 GP</cost>
+					<count type="number">20</count>
+					<description type="formattedtext">
+						<p>Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Arrows</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Ammunition</subtype>
+					<type type="string">Adventuring Gear</type>
+					<value type="string">1 GP</value>
+					<version type="string">2024</version>
+					<weight type="number">0.05</weight>
+				</id-00013>
+				<id-00014>
+					
+					
+					<carried type="number">1</carried>
+					<count type="number">1</count>
+					<locked type="number">1</locked>
+					<name type="string">Gaming Set (choose)</name>
+				</id-00014>
+				<id-00015>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">5 GP</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>A Healer's Kit has ten uses. As a Utilize action, you can expend one of its uses to stabilize an Unconscious creature that has 0 Hit Points without needing to make a Wisdom (Medicine) check.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Healer's Kit</name>
+					<picture type="token"></picture>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">3</weight>
+				</id-00015>
+				<id-00016>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">1 GP</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>A Quiver holds up to 20 Arrows.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Quiver</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">1</weight>
+				</id-00016>
+				<id-00017>
+					
+					
+					<carried type="number">1</carried>
+					<cost type="string">2 GP</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>Traveler's Clothes are resilient garments designed for travel in various environments.</p>
+					</description>
+					<locked type="number">1</locked>
+					<name type="string">Clothes, Traveler's</name>
+					<rarity type="string">common</rarity>
+					<subtype type="string">Standard</subtype>
+					<type type="string">Adventuring Gear</type>
+					<version type="string">2024</version>
+					<weight type="number">4</weight>
+				</id-00017>
+			</inventorylist>
+			<languagelist>
+				
+				
+				<id-00001>
+					
+					
+					<name type="string">Common</name>
+				</id-00001>
+				<id-00002>
+					
+					
+					<name type="string">Dwarvish</name>
+				</id-00002>
+				<id-00003>
+					
+					
+					<name type="string">Gnomish</name>
+				</id-00003>
+			</languagelist>
+			<level type="number">4</level>
+			<name type="string">Jugador Uno</name>
+			<perception type="number">12</perception>
+			<perceptionmodifier type="number">0</perceptionmodifier>
+			<portrait type="token">portraits/FG Fantasy/gnome_male_beard_2_fantasy.jpg</portrait>
+			<powergroup>
+				
+				
+				<id-00001>
+					
+					
+					<name type="string">Rage (Barbarian)</name>
+					<stat type="string">strength</stat>
+				</id-00001>
+				<id-00002>
+					
+					
+					<name type="string">Feats</name>
+				</id-00002>
+				<id-00003>
+					
+					
+					<name type="string">Species (Dwarf)</name>
+				</id-00003>
+				<id-00004>
+					
+					
+					<name type="string">Class (Barbarian)</name>
+				</id-00004>
+			</powergroup>
+			<powermeta>
+				
+				
+				<pactmagicslots1>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots1>
+				<pactmagicslots2>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots2>
+				<pactmagicslots3>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots3>
+				<pactmagicslots4>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots4>
+				<pactmagicslots5>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots5>
+				<pactmagicslots6>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots6>
+				<pactmagicslots7>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots7>
+				<pactmagicslots8>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots8>
+				<pactmagicslots9>
+					
+					
+					<max type="number">0</max>
+				</pactmagicslots9>
+				<spellslots1>
+					
+					
+					<max type="number">0</max>
+				</spellslots1>
+				<spellslots2>
+					
+					
+					<max type="number">0</max>
+				</spellslots2>
+				<spellslots3>
+					
+					
+					<max type="number">0</max>
+				</spellslots3>
+				<spellslots4>
+					
+					
+					<max type="number">0</max>
+				</spellslots4>
+				<spellslots5>
+					
+					
+					<max type="number">0</max>
+				</spellslots5>
+				<spellslots6>
+					
+					
+					<max type="number">0</max>
+				</spellslots6>
+				<spellslots7>
+					
+					
+					<max type="number">0</max>
+				</spellslots7>
+				<spellslots8>
+					
+					
+					<max type="number">0</max>
+				</spellslots8>
+				<spellslots9>
+					
+					
+					<max type="number">0</max>
+				</spellslots9>
+			</powermeta>
+			<powers>
+				
+				
+				<id-00001>
+					
+					
+					<actions>
+						
+						
+					</actions>
+					<category type="string">Origin</category>
+					<description type="formattedtext">
+						<p>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</p>
+					</description>
+					<group type="string">Feats</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Savage Attacker (Damage Reroll)</name>
+					<prepared type="number">0</prepared>
+					<repeatable type="number">0</repeatable>
+					<version type="string">2024</version>
+				</id-00001>
+				<id-00002>
+					
+					
+					<actions>
+						
+						
+					</actions>
+					<category type="string">General</category>
+					<description type="formattedtext">
+						<p>You gain the following benefits.</p>
+						<p>
+							<b>Ability Score Increase. </b>Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+						<p>
+							<b>Punch and Grab. </b>When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p>
+						<p>
+							<b>Attack Advantage. </b>You have Advantage on attack rolls against a creature Grappled by you.</p>
+						<p>
+							<b>Fast Wrestler. </b>You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</p>
+					</description>
+					<group type="string">Feats</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Grappler (Punch and Grab)</name>
+					<prepared type="number">0</prepared>
+					<prerequisite type="string">Strength or Dexterity 13+</prerequisite>
+					<repeatable type="number">0</repeatable>
+					<version type="string">2024</version>
+				</id-00002>
+				<id-00003>
+					
+					
+					<actions>
+						
+						
+					</actions>
+					<category type="string">General</category>
+					<description type="formattedtext">
+						<p>You gain the following benefits.</p>
+						<p>
+							<b>Ability Score Increase. </b>Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+						<p>
+							<b>Punch and Grab. </b>When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p>
+						<p>
+							<b>Attack Advantage. </b>You have Advantage on attack rolls against a creature Grappled by you.</p>
+						<p>
+							<b>Fast Wrestler. </b>You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</p>
+					</description>
+					<group type="string">Feats</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Grappler (Fast Wrestler)</name>
+					<prepared type="number">0</prepared>
+					<prerequisite type="string">Strength or Dexterity 13+</prerequisite>
+					<repeatable type="number">0</repeatable>
+					<version type="string">2024</version>
+				</id-00003>
+				<id-00004>
+					
+					
+					<actions>
+						
+						
+						<id-00001>
+							
+							
+							<apply type="string">action</apply>
+							<durmod type="number">1</durmod>
+							<label type="string">Grappler (Attack Advantage); ADVATK</label>
+							<order type="number">1</order>
+							<targeting type="string">self</targeting>
+							<type type="string">effect</type>
+						</id-00001>
+					</actions>
+					<category type="string">General</category>
+					<description type="formattedtext">
+						<p>You gain the following benefits.</p>
+						<p>
+							<b>Ability Score Increase. </b>Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+						<p>
+							<b>Punch and Grab. </b>When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p>
+						<p>
+							<b>Attack Advantage. </b>You have Advantage on attack rolls against a creature Grappled by you.</p>
+						<p>
+							<b>Fast Wrestler. </b>You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</p>
+					</description>
+					<group type="string">Feats</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Grappler (Attack Advantage)</name>
+					<prepared type="number">0</prepared>
+					<prerequisite type="string">Strength or Dexterity 13+</prerequisite>
+					<repeatable type="number">0</repeatable>
+					<version type="string">2024</version>
+				</id-00004>
+				<id-00005>
+					
+					
+					<actions>
+						
+						
+						<id-00001>
+							
+							
+							<label type="string">Dwarven Resilience; RESIST: poison; Advantage on saving throws vs. Poisoned</label>
+							<order type="number">1</order>
+							<targeting type="string">self</targeting>
+							<type type="string">effect</type>
+						</id-00001>
+					</actions>
+					<description type="formattedtext">
+						<p>You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned Condition.</p>
+					</description>
+					<group type="string">Species (Dwarf)</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Dwarven Resilience</name>
+					<prepared type="number">0</prepared>
+					<version type="string">2024</version>
+				</id-00005>
+				<id-00006>
+					
+					
+					<actions>
+						
+						
+						<id-00001>
+							
+							
+							<durmod type="number">10</durmod>
+							<durunit type="string">minute</durunit>
+							<label type="string">Stonecunning; VISION: tremorsense 60</label>
+							<order type="number">1</order>
+							<targeting type="string">self</targeting>
+							<type type="string">effect</type>
+						</id-00001>
+					</actions>
+					<description type="formattedtext">
+						<p>As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.</p>
+						<p>You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+					</description>
+					<group type="string">Species (Dwarf)</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Stonecunning</name>
+					<prepared type="number">2</prepared>
+					<version type="string">2024</version>
+				</id-00006>
+				<id-00007>
+					
+					
+					<actions>
+						
+						
+						<id-00001>
+							
+							
+							<durmod type="number">10</durmod>
+							<durunit type="string">minute</durunit>
+							<label type="string">Rage; ADVCHK: strength; ADVSAV: strength; DMG: 2; RESIST: bludgeoning, piercing, slashing</label>
+							<order type="number">1</order>
+							<targeting type="string">self</targeting>
+							<type type="string">effect</type>
+						</id-00001>
+					</actions>
+					<description type="formattedtext">
+						<p>You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.</p>
+						<p>You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+						<p>While active, your Rage follows the rules below.</p>
+						<p>
+							<b>Damage Resistance. </b>You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+						<p>
+							<b>Rage Damage. </b>When you make an attack using Strength - with either a weapon or an Unarmed Strike - and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.</p>
+						<p>
+							<b>Strength Advantage. </b>You have Advantage on Strength checks and Strength saving throws.</p>
+						<p>
+							<b>No Concentration or Spells. </b>You can't maintain Concentration, and you can't cast spells.</p>
+						<p>Duration. The Rage lasts until the end of your next turn, and it ends early if you don Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following:</p>
+						<p>• Make an attack roll against an enemy.
+• Force an enemy to make a saving throw.
+• Take a Bonus Action to extend your Rage.</p>
+						<p>Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes.</p>
+					</description>
+					<group type="string">Rage (Barbarian)</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Rage</name>
+					<prepared type="number">2</prepared>
+					<version type="string">2024</version>
+				</id-00007>
+				<id-00008>
+					
+					
+					<actions>
+						
+						
+					</actions>
+					<description type="formattedtext">
+						<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+						<p>When you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table.</p>
+					</description>
+					<group type="string">Class (Barbarian)</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Weapon Mastery</name>
+					<prepared type="number">0</prepared>
+					<version type="string">2024</version>
+				</id-00008>
+				<id-00009>
+					
+					
+					<actions>
+						
+						
+						<id-00001>
+							
+							
+							<label type="string">Danger Sense; ADVSAV: dexterity</label>
+							<order type="number">1</order>
+							<targeting type="string">self</targeting>
+							<type type="string">effect</type>
+						</id-00001>
+					</actions>
+					<description type="formattedtext">
+						<p>You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.</p>
+					</description>
+					<group type="string">Class (Barbarian)</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Danger Sense</name>
+					<prepared type="number">0</prepared>
+					<version type="string">2024</version>
+				</id-00009>
+				<id-00010>
+					
+					
+					<actions>
+						
+						
+						<id-00001>
+							
+							
+							<durmod type="number">1</durmod>
+							<label type="string">Reckless Attack; ADVATK: melee; GRANTADVATK</label>
+							<order type="number">1</order>
+							<targeting type="string">self</targeting>
+							<type type="string">effect</type>
+						</id-00001>
+					</actions>
+					<description type="formattedtext">
+						<p>You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</p>
+					</description>
+					<group type="string">Class (Barbarian)</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Reckless Attack</name>
+					<prepared type="number">0</prepared>
+					<version type="string">2024</version>
+				</id-00010>
+				<id-00011>
+					
+					
+					<actions>
+						
+						
+						<id-00001>
+							
+							
+							<apply type="string">action</apply>
+							<durmod type="number">1</durmod>
+							<label type="string">Frenzy; DMG: 2d6</label>
+							<order type="number">1</order>
+							<targeting type="string">self</targeting>
+							<type type="string">effect</type>
+						</id-00001>
+					</actions>
+					<description type="formattedtext">
+						<p>If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.</p>
+					</description>
+					<group type="string">Class (Barbarian)</group>
+					<level type="number">0</level>
+					<locked type="number">1</locked>
+					<name type="string">Frenzy</name>
+					<prepared type="number">0</prepared>
+					<version type="string">2024</version>
+				</id-00011>
+			</powers>
+			<profbonus type="number">2</profbonus>
+			<proficiencylist>
+				
+				
+				<id-00001>
+					
+					
+					<name type="string">Armor: Light</name>
+				</id-00001>
+				<id-00002>
+					
+					
+					<name type="string">Armor: Medium</name>
+				</id-00002>
+				<id-00003>
+					
+					
+					<name type="string">Armor: Shields</name>
+				</id-00003>
+				<id-00004>
+					
+					
+					<name type="string">Weapon: Martial</name>
+				</id-00004>
+				<id-00005>
+					
+					
+					<name type="string">Weapon: Simple</name>
+				</id-00005>
+				<id-00006>
+					
+					
+					<name type="string">Tool: Playing Cards</name>
+				</id-00006>
+			</proficiencylist>
+			<race type="string">Dwarf</race>
+			<racelink type="windowreference">
+				<class>reference_race</class>
+				<recordname>race.id-00002@DNDSRD521PLAYER</recordname>
+			</racelink>
+			<racename type="string">Dwarf</racename>
+			<raceversion type="string">2024</raceversion>
+			<senses type="string">Darkvision 120</senses>
+			<size type="string">Medium</size>
+			<skilllist>
+				
+				
+				<id-00001>
+					
+					
+					<name type="string">Perception</name>
+					<prof type="number">1</prof>
+					<stat type="string">wisdom</stat>
+					<total type="number">2</total>
+				</id-00001>
+				<id-00002>
+					
+					
+					<name type="string">Athletics</name>
+					<prof type="number">1</prof>
+					<stat type="string">strength</stat>
+					<total type="number">5</total>
+				</id-00002>
+				<id-00003>
+					
+					
+					<name type="string">Intimidation</name>
+					<prof type="number">1</prof>
+					<stat type="string">charisma</stat>
+					<total type="number">2</total>
+				</id-00003>
+				<id-00004>
+					
+					
+					<name type="string">Nature</name>
+					<prof type="number">1</prof>
+					<stat type="string">intelligence</stat>
+					<total type="number">2</total>
+				</id-00004>
+				<id-00005>
+					
+					
+					<name type="string">Survival</name>
+					<prof type="number">1</prof>
+					<stat type="string">wisdom</stat>
+					<total type="number">2</total>
+				</id-00005>
+			</skilllist>
+			<speed>
+				
+				
+				<armor type="number">0</armor>
+				<base type="number">30</base>
+				<misc type="number">0</misc>
+				<temporary type="number">0</temporary>
+				<total type="number">30</total>
+			</speed>
+			<subracelink type="windowreference">
+				<class></class>
+				<recordname></recordname>
+			</subracelink>
+			<temp>
+				
+				
+			</temp>
+			<token type="token">portrait_id-00001_token</token>
+			<token3Dflat type="token"></token3Dflat>
+			<traitlist>
+				
+				
+				<id-00001>
+					
+					
+					<locked type="number">1</locked>
+					<name type="string">Darkvision</name>
+					<text type="formattedtext">
+						<p>You have Darkvision with a range of 120 feet.</p>
+					</text>
+				</id-00001>
+				<id-00002>
+					
+					
+					<locked type="number">1</locked>
+					<name type="string">Dwarven Resilience</name>
+					<text type="formattedtext">
+						<p>You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned Condition.</p>
+					</text>
+				</id-00002>
+				<id-00003>
+					
+					
+					<locked type="number">1</locked>
+					<name type="string">Dwarven Toughness</name>
+					<text type="formattedtext">
+						<p>Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p>
+					</text>
+				</id-00003>
+				<id-00004>
+					
+					
+					<locked type="number">1</locked>
+					<name type="string">Stonecunning</name>
+					<text type="formattedtext">
+						<p>As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.</p>
+						<p>You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+					</text>
+				</id-00004>
+			</traitlist>
+			<weaponlist>
+				
+				
+				<id-00001>
+					
+					
+					<attackbonus type="number">0</attackbonus>
+					<carried type="number">2</carried>
+					<damagelist>
+						
+						
+						<id-00001>
+							
+							
+							<bonus type="number">0</bonus>
+							<dice type="dice">d12</dice>
+							<stat type="string">base</stat>
+							<type type="string">slashing</type>
+						</id-00001>
+					</damagelist>
+					<handling type="number">0</handling>
+					<isidentified type="number">1</isidentified>
+					<mastery type="string">Cleave</mastery>
+					<name type="string">Greataxe</name>
+					<properties type="string">Heavy, Two-Handed</properties>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00001</recordname>
+					</shortcut>
+					<type type="number">0</type>
+				</id-00001>
+				<id-00002>
+					
+					
+					<attackbonus type="number">0</attackbonus>
+					<carried type="number">2</carried>
+					<damagelist>
+						
+						
+						<id-00001>
+							
+							
+							<bonus type="number">0</bonus>
+							<dice type="dice">d6</dice>
+							<stat type="string">base</stat>
+							<type type="string">slashing</type>
+						</id-00001>
+					</damagelist>
+					<handling type="number">0</handling>
+					<isidentified type="number">1</isidentified>
+					<mastery type="string">Vex</mastery>
+					<name type="string">Handaxe</name>
+					<properties type="string">Light, Thrown (Range 20/60)</properties>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00002</recordname>
+					</shortcut>
+					<type type="number">0</type>
+				</id-00002>
+				<id-00003>
+					
+					
+					<ammo type="number">0</ammo>
+					<attackbonus type="number">0</attackbonus>
+					<carried type="number">2</carried>
+					<damagelist>
+						
+						
+						<id-00001>
+							
+							
+							<bonus type="number">0</bonus>
+							<dice type="dice">d6</dice>
+							<stat type="string">base</stat>
+							<type type="string">slashing</type>
+						</id-00001>
+					</damagelist>
+					<handling type="number">0</handling>
+					<isidentified type="number">1</isidentified>
+					<mastery type="string">Vex</mastery>
+					<maxammo type="number">0</maxammo>
+					<name type="string">Handaxe</name>
+					<properties type="string">Light, Thrown (Range 20/60)</properties>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00002</recordname>
+					</shortcut>
+					<type type="number">2</type>
+				</id-00003>
+				<id-00004>
+					
+					
+					<attackbonus type="number">0</attackbonus>
+					<carried type="number">2</carried>
+					<damagelist>
+						
+						
+						<id-00001>
+							
+							
+							<bonus type="number">0</bonus>
+							<dice type="dice">d6</dice>
+							<stat type="string">base</stat>
+							<type type="string">piercing</type>
+						</id-00001>
+					</damagelist>
+					<handling type="number">0</handling>
+					<isidentified type="number">1</isidentified>
+					<mastery type="string">Sap</mastery>
+					<name type="string">Spear</name>
+					<properties type="string">Thrown (Range 20/60), Versatile (1d8)</properties>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00011</recordname>
+					</shortcut>
+					<type type="number">0</type>
+				</id-00004>
+				<id-00005>
+					
+					
+					<ammo type="number">0</ammo>
+					<attackbonus type="number">0</attackbonus>
+					<carried type="number">2</carried>
+					<damagelist>
+						
+						
+						<id-00001>
+							
+							
+							<bonus type="number">0</bonus>
+							<dice type="dice">d6</dice>
+							<stat type="string">base</stat>
+							<type type="string">piercing</type>
+						</id-00001>
+					</damagelist>
+					<handling type="number">0</handling>
+					<isidentified type="number">1</isidentified>
+					<mastery type="string">Sap</mastery>
+					<maxammo type="number">0</maxammo>
+					<name type="string">Spear</name>
+					<properties type="string">Thrown (Range 20/60), Versatile (1d8)</properties>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00011</recordname>
+					</shortcut>
+					<type type="number">2</type>
+				</id-00005>
+				<id-00006>
+					
+					
+					<ammo type="number">0</ammo>
+					<attackbonus type="number">0</attackbonus>
+					<carried type="number">2</carried>
+					<damagelist>
+						
+						
+						<id-00001>
+							
+							
+							<bonus type="number">0</bonus>
+							<dice type="dice">d6</dice>
+							<stat type="string">base</stat>
+							<type type="string">piercing</type>
+						</id-00001>
+					</damagelist>
+					<handling type="number">0</handling>
+					<isidentified type="number">1</isidentified>
+					<mastery type="string">Vex</mastery>
+					<maxammo type="number">0</maxammo>
+					<name type="string">Shortbow</name>
+					<properties type="string">Ammunition (Range 80/320; Arrow), Two-Handed</properties>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00012</recordname>
+					</shortcut>
+					<type type="number">1</type>
+				</id-00006>
+			</weaponlist>
+		
+	</character>
+</root>

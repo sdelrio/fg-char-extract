@@ -1,0 +1,4 @@
+.task/
+devbox.lock
+*.xml
+dist/**

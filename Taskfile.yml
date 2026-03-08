@@ -1,0 +1,58 @@
+version: '3'
+
+vars:
+  PLATFORMS: darwin/amd64 darwin/arm64 windows/amd64
+
+tasks:
+  default:
+    desc: Show help
+    cmds:
+      - cmd: task --list
+        silent: true
+      - cmd: echo "Current OS is {{OS}}/{{ARCH}}"
+        silent: true
+
+  build:
+    desc: Build the application for current platform
+    cmds:
+      - mkdir -p dist
+      - go build -o dist/fg-char-extract main.go
+    sources:
+      - "*.go"
+    generates:
+      - dist/fg-char-extract
+
+  build-all:
+    desc: Build for all supported platforms
+    deps: [clean]
+    cmds:
+      - for: { var: PLATFORMS }
+        task: build-for
+        vars: { TARGET: '{{.ITEM}}' }
+
+  build-for:
+    internal: true
+    vars:
+      GOOS: '{{index (splitList "/" .TARGET) 0}}'
+      GOARCH: '{{index (splitList "/" .TARGET) 1}}'
+      BIN: 'dist/fg-char-extract-{{.GOOS}}-{{.GOARCH}}{{if eq .GOOS "windows"}}.exe{{end}}'
+    cmds:
+      - echo "Building for {{.GOOS}}/{{.GOARCH}}..."
+      - mkdir -p dist
+      - GOOS={{.GOOS}} GOARCH={{.GOARCH}} go build -o {{.BIN}} main.go
+
+  run:
+    desc: Run against local db.xml
+    cmds:
+      - go run main.go ./tests/db.xml
+
+  test:
+    desc: Run unit tests
+    cmds:
+      - go test -v ./...
+
+  clean:
+    desc: Remove binary and generated XML files
+    cmds:
+      - rm -rf dist/
+      - rm -f character_*.xml
