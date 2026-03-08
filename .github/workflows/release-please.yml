@@ -44,8 +44,22 @@ jobs:
       - name: Build all
         run: task build-all
 
+      - name: Build Summary
+        run: |
+          echo "### 🏗️ Build Artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "| Artifact | Size |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
+          ls -lh dist/ | grep "^-" | awk '{print "| `" $9 "` | " $5 " |"}' >> $GITHUB_STEP_SUMMARY
+
       - name: Upload Release Artifacts
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.release-please.outputs.tag_name }}
           files: dist/*
+
+      - name: Release Summary
+        run: |
+          echo "### 🚀 Release Successful" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** \`${{ needs.release-please.outputs.tag_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "All artifacts have been successfully uploaded to the GitHub Release." >> $GITHUB_STEP_SUMMARY
+          echo "[View Release](https://github.com/${{ github.repository }}/releases/tag/${{ needs.release-please.outputs.tag_name }})" >> $GITHUB_STEP_SUMMARY
