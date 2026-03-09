@@ -1,7 +1,8 @@
 version: '3'
 
 vars:
-  PLATFORMS: darwin/amd64 darwin/arm64 windows/amd64
+  PLATFORMS: darwin/amd64 darwin/arm64 windows/amd64 linux/amd64
+  VERSION: "{{.VERSION | default \"dev\"}}"
 
 tasks:
   default:
@@ -16,7 +17,7 @@ tasks:
     desc: Build the application for current platform
     cmds:
       - mkdir -p dist
-      - go build -o dist/fg-char-extract main.go
+      - go build -ldflags="-X main.version={{.VERSION}}" -o dist/fg-char-extract main.go
     sources:
       - "*.go"
     generates:
@@ -37,9 +38,9 @@ tasks:
       GOARCH: '{{index (splitList "/" .TARGET) 1}}'
       BIN: 'dist/fg-char-extract-{{.GOOS}}-{{.GOARCH}}{{if eq .GOOS "windows"}}.exe{{end}}'
     cmds:
-      - echo "Building for {{.GOOS}}/{{.GOARCH}}..."
+      - echo "Building for {{.GOOS}}/{{.GOARCH}} (version {{.VERSION}})..."
       - mkdir -p dist
-      - GOOS={{.GOOS}} GOARCH={{.GOARCH}} go build -o {{.BIN}} main.go
+      - GOOS={{.GOOS}} GOARCH={{.GOARCH}} go build -ldflags="-X main.version={{.VERSION}}" -o {{.BIN}} main.go
 
   run:
     desc: Run against local db.xml

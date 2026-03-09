@@ -10,7 +10,16 @@ import (
 	"strings"
 )
 
+var version = "dev"
+
 func main() {
+	if len(os.Args) > 1 {
+		if os.Args[1] == "--version" || os.Args[1] == "-v" {
+			fmt.Printf("fg-char-extract version %s\n", version)
+			return
+		}
+	}
+
 	filename := "db.xml"
 	if len(os.Args) > 1 {
 		filename = os.Args[1]

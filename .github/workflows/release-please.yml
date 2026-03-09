@@ -54,7 +54,7 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build all
-        run: task build-all
+        run: task build-all VERSION=${{ needs.release-please.outputs.tag_name }}
 
       - name: Build Summary
         run: |
